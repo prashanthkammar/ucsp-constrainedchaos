@@ -937,6 +937,10 @@ def pro15():
             current_user.score = score
             current_user.nextq += int(1)
             db.session.commit()
+            if current_user.end_time == None:
+                dt = datetime.now(tz=pytz.UTC)           
+                current_user.end_time = dt.astimezone(pytz.timezone('Asia/Kolkata'))
+                db.session.commit()
             return redirect(url_for('main.disp_question'))
             flash('')
         elif current_user.present_try <= max_cnt:
