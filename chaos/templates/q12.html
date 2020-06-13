@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<br>
+<div class="container">
+    <h2 class="display-4 text-center text-secondary">Quest 12</h2>
+    <hr style="height:1px;border-width:0;color:rgb(0, 195, 255);background-color:rgb(0, 195, 255)">
+
+<br /><br /><br>
+
+      <h3><p class="text-center text-muted"><a href="{{url_for('main.error1')}} " target="_blank">/treasurehuntv1.0</a></p></h3>
+
+        <br><br><br><br>
+        <div class="text-center">
+          {% with messages = get_flashed_messages(with_categories=true) %} {% if messages %}
+        {% for category, message in messages %}
+        <p><i class="{{ category}}">{{message}}</i></p>
+        {% endfor %} 
+        {% endif %} {% endwith %}
+        
+       <div class="m-auto">
+        <form class="form-group" action="{{ url_for('main.pro12') }}" method="POST" autocomplete="off">
+          <span class="text-responsive text-muted">Enter your answer: </span>
+          <input
+          spellcheck="false"
+            class="form_text ml-1 form-control"
+            name="Answer"
+            type="text"
+            required
+          /><br />
+          <br /><br>
+          <div class="text-responsive">
+            <input
+              class="btn"
+              type="submit"
+              name="Submit"
+              value="Submit"
+            />
+          </div>
+        </div>
+        </form>
+</div>
+{% endblock %}

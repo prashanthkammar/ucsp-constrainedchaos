@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<br>
+<div class="container">
+    <h2 class="display-4 text-center text-secondary">Quest 9</h2>
+    <hr style="height:1px;border-width:0;color:rgb(0, 195, 255);background-color:rgb(0, 195, 255)">
+
+      <br /><br /><br>
+
+      <h4> <p class="text-center text-muted"> "I'm a Greek, who lives upon the world of Jigsaw." </p> </h4><br><br>
+
+        <br><br><br>
+        <div class="text-center">
+          {% with messages = get_flashed_messages(with_categories=true) %} {% if messages %}
+        {% for category, message in messages %}
+        <p><i class="{{ category}}">{{message}}</i></p>
+        {% endfor %} 
+        {% endif %} {% endwith %}
+        
+       <div class="m-auto">
+        <form class="form-group" action="{{ url_for('main.pro9') }}" method="POST" autocomplete="off">
+          <span class="text-responsive text-muted">Enter your answer: </span>
+          <input
+          spellcheck="false"
+            class="form_text ml-1 form-control"
+            name="Answer"
+            type="text"
+            required
+          /><br />
+          <br /><br>
+          <div class="text-responsive">
+            <input
+              class="btn"
+              type="submit"
+              name="Submit"
+              value="Submit"
+            />
+          </div>
+        </div>
+        </form><br><br><br><br><br>
+        
+        <p class="text-right text-muted"><a href="https://www.wikipedia.org/" target="_blank">If in doubt, use WIKI</a> </p>
+</div>
+{% endblock %}

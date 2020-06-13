@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block body %}
+<br>
+<div class="container">
+<br><br><br>
+<h1 style="font-size: 2.7rem; font-family: 'Eater', cursive;" class="ml-2 mr-2 text-responsive text-center display-4"> Constrained Chaos!!!!</h1>
+<p style="font-family: 'Nova Script', cursive;" class="text-muted text-center">Genius Redifined</p><br>
+<div class="text-center"><img style="opacity: 0.5;" width="200px" class="img-fluid" src="{{ url_for('static', filename='images/maze.jpg') }}" alt=""></div>
+<br><br>
+<!-- <p style="font-family: 'Nova Script', cursive;" class="text-center"><a href = "{{url_for('main.instructions')}}">Proceed to Instructions...</a></p> -->
+{% if current_user.is_authenticated %}
+<div class="text-center"><div class="text-center"><a class="my_btn" href="{{ url_for('main.instructions') }}">Instructions</a></div></div>
+{% else %}
+<div class="text-center"><div class="text-center"><a class="my_btn" href="{{ url_for('auth.login') }}">Login</a></div></div>
+{% endif %}
+</div>
+<br><br>
+{% endblock %}

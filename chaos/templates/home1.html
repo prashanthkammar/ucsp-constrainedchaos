@@ -1,0 +1,17 @@
+{% extends "layout.html" %}
+{% block body %}
+<div class="container">
+<br>
+<h1 id="imagineering-title" class="text-responsive text-center">Constrained Chaos</h1>
+<p id="imagineering-subtitle" class="text-center">Imagination defines no limitation</p>
+</div>
+<div class="text-center">
+    <img width="300px" src="{{ url_for('static', filename='images/main.png') }}" alt="image" class="img-responsive">
+</div>
+{% if current_user.is_authenticated %}
+<div class="text-center"><div class="text-center"><a class="my_btn" href="{{ url_for('main.home1') }}">Profile</a></div></div>
+{% else %}
+<div class="text-center"><div class="text-center"><a class="my_btn" href="{{ url_for('auth.login') }}">Login</a></div></div>
+{% endif %}
+<br><br>
+{% endblock %}

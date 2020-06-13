@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<br>
+<div class="container">
+    <h2 class="display-4 text-center text-secondary">Quest 10</h2>
+    <hr style="height:1px;border-width:0;color:rgb(0, 195, 255);background-color:rgb(0, 195, 255)">
+    <blockquote class="m-auto text-center text-secondary lead">
+      I let them flow in one way and one way only. <br> This nature of mine rectifies oscilating thoughts. Well, I am not that philosophical just a lifeless thing that can be biased to suit your needs.
+      </blockquote><br><br>
+      <small><p class="text-center">solve the above riddle to get a word to decrypt the below message</p></small>
+      <br />
+      <h3><p class="text-center text-muted">Fporw la o oeglsu</p></h3>
+        <br><br><br>
+        <div class="text-center">
+          {% with messages = get_flashed_messages(with_categories=true) %} {% if messages %}
+        {% for category, message in messages %}
+        <p><i class="{{ category}}">{{message}}</i></p>
+        {% endfor %} 
+        {% endif %} {% endwith %}
+        
+       <div class="m-auto">
+        <form class="form-group" action="{{ url_for('main.pro10') }}" method="POST" autocomplete="off">
+          <span class="text-responsive text-muted">Enter your answer: </span>
+          <input
+          spellcheck="false"
+            class="form_text ml-1 form-control"
+            name="Answer"
+            type="text"
+            required
+          /><br />
+          <br /><br>
+          <div class="text-responsive">
+            <input
+              class="btn"
+              type="submit"
+              name="Submit"
+              value="Submit"
+            />
+          </div>
+        </div>
+        </form><br><br><br>
+        <p style="font-size: 20px;" class="text-center text-muted"><a href="https://cryptii.com/pipes/vigenere-cipher" target="_blank">Decrypt</a> </p>
+</div>
+{% endblock %}

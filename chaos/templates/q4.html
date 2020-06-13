@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% block body %}
+<div class="container">
+    <h2 class="text-center display-4 text-secondary">Quest 4</h2>
+    <hr style="height:1px;border-width:0;color:rgb(0, 195, 255);background-color:rgb(0, 195, 255)">
+    <br>
+    <blockquote class="text-responsive m-auto text-secondary lead text-center">
+      I travelled to a disputed place once and said that <i>I am a jelly doughnut.</i> Forget about me, I got assassinated. Name the city that made me look uneducated.
+    </blockquote>
+    <br><br><br>
+      <div class="text-center">
+        {% with messages = get_flashed_messages(with_categories=true) %} {% if messages %}
+        {% for category, message in messages %}
+        <p><i class="{{ category}}">{{message}}</i></p>
+        {% endfor %} 
+        {% endif %} {% endwith %}
+      </div>
+      <br>
+       <div class="m-auto">
+        <form class="form-group" action="{{ url_for('main.pro4') }}" method="POST" autocomplete="off">
+          <div class="text-center">
+            <span class="text-responsive ml-3 text-muted">Enter your answer: </span>
+            <input
+            spellcheck="false"
+              class="text-responsive form_text ml-1 form-control text-muted"
+              name="Answer"
+              type="text"
+              required
+            />
+          <br />
+          <br />
+          <br>
+          <div class="text-responsive">
+            <input
+              class="btn"
+              type="submit"
+              name="Submit"
+              value="Submit"
+            />
+          </div>
+        </div>
+        </form><br><br><br>
+        
+        <p class="text-right text-muted"><i><a href="https://i1.wp.com/tecake.com/wp-content/uploads/2020/04/MoneyHeist-1.jpg?fit=1280%2C720&ssl=1" target="_blank">Psst..!</a></i> </p>
+</div>
+{% endblock %}

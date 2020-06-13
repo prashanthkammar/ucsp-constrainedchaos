@@ -1,0 +1,21 @@
+  
+{% extends 'base.html' %}
+{% block body %}
+<embed src="https://www.youtuberepeater.com/watch?v=iNpXCzaWW1s&name=Alarm+Clock+Sound#gsc.tab=0" width="0" height="0" autoplay="true" loop="true">
+<br>
+<div class="container">
+<h4 style="font-size: 2rem; font-family: 'Eater', cursive;" class="text-center text-muted display-4">Congratulations!</h4>
+<h6 style="font-family: 'Nova Script', cursive;" class="text-center text-muted">You made it this far</h6>
+<br>
+<p style="margin: auto; width: 70%; font-family: 'Nova Script', cursive;" class="text-center text-muted lead">Suddenly you hear a sound, oh it's the alarm. you've been dreaming all this time!
+    Uff! such a weird dream it was, wasn't it? 
+</p><br><br>
+<p style="margin: auto; width: 70%; font-family: 'Nova Script', cursive;" class="text-center text-muted lead">Oh no! it's 11 AM you have an online quiz/internals.</p>
+<br>
+<p style="font-family: 'Nova Script', cursive;" class="text-center text-muted"><a href="{{url_for('main.finish')}}"> Turn off the Alarm and get going</a> </p>
+<br><br><br><br><br><br><br><br><br><br>
+<iframe src="{{ url_for('static', filename='music/250-milliseconds-of-silence.mp3') }}" allow="autoplay" id="audio" style="display: none"></iframe>
+<audio src="{{ url_for('static', filename='music/WhatsApp Audio 2020-05-12 at 5.24.56 PM.mpeg') }}" autoplay loop></audio>
+</div>
+{% endblock %}
+

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block body %}
+<br>
+<div class="container">
+    <div class="text-center">
+        {% with messages = get_flashed_messages(with_categories=true) %} {% if messages %}
+      {% for category, message in messages %}
+      <p><i class="{{ category}}">{{message}}</i></p>
+      {% endfor %} 
+      {% endif %} {% endwith %}
+    </div>
+<h1 style="font-family: 'Aref Ruqaa', serif;" class="text-left text-muted">INSTRUCTIONS</h1>
+<hr style="height:1px;border-width:0;color:rgb(0, 195, 255);background-color:rgb(0, 195, 255)">
+<br><br>
+<ul style="font-size: 18px; line-height: 1.8rem; font-family: 'Aref Ruqaa', serif;">
+    <li class="text-muted">Each right answer will earn you 20 points</li>
+    <li class="text-muted">The number of attempts to a question is <i>limited,</i> that is 15 trials per question, so answer if you are confident.</li>
+    <li class="text-muted">After giving 15 wrong answers you will get 3 hints one by one on the subsequent wrong answers and you will lose 5 points for each hint.</li>
+    <li class="text-muted">After 3 hints you will be given the answer itself but will carry 0 points</li>
+    <li class="text-muted">There are no errors in grammar or vocab.</li>
+    <li class="text-muted">Links are given in white</li>
+    <li class="text-muted">Utilize any online resource for your Hunt! If you are on phone you may need to activate desktop mode for your search.</li>
+    <li class="text-muted">The answers are case insensitive. </li>
+    <li class="text-muted">Get your pen and papers ready. </li>
+    <li class="text-muted">For any queries email us at ucsp.nie@gmail.com or call us at <b>NUMBER</b></li>
+</ul>
+<br>
+{% if user.nextq > 1 %}
+<div class="text-center"><a class="my_btn" href="{{ url_for('main.disp_question') }}">Resume</a></div>
+{% else %}
+<div class="text-center"><a class="my_btn" href="{{ url_for('main.disp_question') }}">Start</a></div>
+{% endif %}
+<br><br>
+</div>
+{% endblock %}
