@@ -917,7 +917,7 @@ def pro15():
         max_cnt, hints = get_cnt_n_hints_for(15)
         score = int(current_user.score)
         at = str(current_user.attempts)
-        if request.form['Answer'].lower().strip() == name.lower().strip():
+        if request.form['Answer'].lower().strip() == current_user.name.lower().strip():
             if current_user.hint == -1:
                 score += 20
                 at += '15,20| '
