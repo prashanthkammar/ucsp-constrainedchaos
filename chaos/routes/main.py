@@ -101,10 +101,6 @@ def get_cnt_n_hints_for(question_number):
 def home():
     return render_template('home.html')
 
-# @main.route('/home1')
-# @login_required
-# def home1():
-#     return render_template('home1.html') 
 
 @main.route('/instructions')
 @login_required

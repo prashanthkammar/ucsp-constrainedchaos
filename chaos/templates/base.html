@@ -140,12 +140,12 @@
   </head>
   <body>
     {% block body %} {% endblock %}
-    {% if current_user.is_authenticated %}
+    <!-- {% if current_user.is_authenticated %}
     <div class="text-left">
     <h5><a style="text-decoration: none; " href = "{{url_for('auth.logout')}}">Logout</a></h5>
     <br><br>
     </div>
-    {% endif %}
+    {% endif %} -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script type="text/javascript"> 
       window.history.forward(); 
