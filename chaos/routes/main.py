@@ -293,7 +293,7 @@ def pro1():
             db.session.commit()
             flash("You are wrong!! Try again.", "info") 
         else:
-            if current_user.hint < 4:
+            if current_user.hint < 3:
                 current_user.hint += 1
                 db.session.commit()
                 flash(f"{hints[current_user.hint][0]} : {hints[current_user.hint][1]}", "message")
@@ -339,7 +339,7 @@ def pro2():
             db.session.commit()
             flash("You are wrong!! Try again.", "info") 
         else:
-            if current_user.hint < 4:
+            if current_user.hint < 3:
                 current_user.hint += 1
                 db.session.commit()
                 flash(f"{hints[current_user.hint][0]} : {hints[current_user.hint][1]}", "message")
@@ -387,7 +387,7 @@ def pro3():
             db.session.commit()
             flash("You are wrong!! Try again.", "info") 
         else:
-            if current_user.hint < 4:
+            if current_user.hint < 3:
                 current_user.hint += 1
                 db.session.commit()
                 flash(f"{hints[current_user.hint][0]} : {hints[current_user.hint][1]}", "message")
@@ -433,7 +433,7 @@ def pro4():
             db.session.commit()
             flash("You are wrong!! Try again.", "info") 
         else:
-            if current_user.hint < 4:
+            if current_user.hint < 3:
                 current_user.hint += 1
                 db.session.commit()
                 flash(f"{hints[current_user.hint][0]} : {hints[current_user.hint][1]}", "message")
@@ -479,7 +479,7 @@ def pro5():
             db.session.commit()
             flash("You are wrong!! Try again.", "info") 
         else:
-            if current_user.hint < 4:
+            if current_user.hint < 3:
                 current_user.hint += 1
                 db.session.commit()
                 flash(f"{hints[current_user.hint][0]} : {hints[current_user.hint][1]}", "message")
@@ -525,7 +525,7 @@ def pro6():
             db.session.commit()
             flash("You are wrong!! Try again.", "info") 
         else:
-            if current_user.hint < 4:
+            if current_user.hint < 3:
                 current_user.hint += 1
                 db.session.commit()
                 flash(f"{hints[current_user.hint][0]} : {hints[current_user.hint][1]}", "message")
@@ -572,7 +572,7 @@ def pro7():
             db.session.commit()
             flash("You are wrong!! Try again.", "info") 
         else:
-            if current_user.hint < 4:
+            if current_user.hint < 3:
                 current_user.hint += 1
                 db.session.commit()
                 flash(f"{hints[current_user.hint][0]} : {hints[current_user.hint][1]}", "message")
@@ -618,7 +618,7 @@ def pro8():
             db.session.commit()
             flash("You are wrong!! Try again.", "info") 
         else:
-            if current_user.hint < 4:
+            if current_user.hint < 3:
                 current_user.hint += 1
                 db.session.commit()
                 flash(f"{hints[current_user.hint][0]} : {hints[current_user.hint][1]}", "message")
@@ -664,7 +664,7 @@ def pro9():
             db.session.commit()
             flash("You are wrong!! Try again.", "info") 
         else:
-            if current_user.hint < 4:
+            if current_user.hint < 3:
                 current_user.hint += 1
                 db.session.commit()
                 flash(f"{hints[current_user.hint][0]} : {hints[current_user.hint][1]}", "message")
@@ -711,7 +711,7 @@ def pro10():
             db.session.commit()
             flash("You are wrong!! Try again.", "info") 
         else:
-            if current_user.hint < 4:
+            if current_user.hint < 3:
                 current_user.hint += 1
                 db.session.commit()
                 flash(f"{hints[current_user.hint][0]} : {hints[current_user.hint][1]}", "message")
@@ -759,7 +759,7 @@ def pro11():
             db.session.commit()
             flash("You are wrong!! Try again.", "info") 
         else:
-            if current_user.hint < 4:
+            if current_user.hint < 3:
                 current_user.hint += 1
                 db.session.commit()
                 flash(f"{hints[current_user.hint][0]} : {hints[current_user.hint][1]}", "message")
@@ -805,7 +805,7 @@ def pro12():
             db.session.commit()
             flash("You are wrong!! Try again.", "info") 
         else:
-            if current_user.hint < 4:
+            if current_user.hint < 3:
                 current_user.hint += 1
                 db.session.commit()
                 flash(f"{hints[current_user.hint][0]} : {hints[current_user.hint][1]}", "message")
@@ -852,7 +852,7 @@ def pro13():
             db.session.commit()
             flash("You are wrong!! Try again.", "info") 
         else:
-            if current_user.hint < 4:
+            if current_user.hint < 3:
                 current_user.hint += 1
                 db.session.commit()
                 flash(f"{hints[current_user.hint][0]} : {hints[current_user.hint][1]}", "message")
@@ -899,7 +899,7 @@ def pro14():
             db.session.commit()
             flash("You are wrong!! Try again.", "info") 
         else:
-            if current_user.hint < 4:
+            if current_user.hint < 3:
                 current_user.hint += 1
                 db.session.commit()
                 flash(f"{hints[current_user.hint][0]} : {hints[current_user.hint][1]}", "message")
@@ -948,7 +948,7 @@ def pro15():
             db.session.commit()
             flash("You are wrong!! Try again.", "info") 
         else:
-            if current_user.hint < 4:
+            if current_user.hint < 3:
                 current_user.hint += 1
                 db.session.commit()
                 flash(f"{hints[current_user.hint][0]} : {hints[current_user.hint][1]}", "message")
