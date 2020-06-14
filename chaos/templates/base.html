@@ -13,6 +13,10 @@
     />
 
     <link href="https://fonts.googleapis.com/css2?family=Eater&family=Merienda+One&family=Nova+Script&family=Sofia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Crimson+Pro:wght@200&family=Inknut+Antiqua:wght@300&family=Kotta+One&family=PT+Serif+Caption&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bigshot+One&family=Federant&family=Iceland&family=Nova+Oval&family=Nova+Square&family=Quantico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Tulpen+One&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap" rel="stylesheet">
     <style>
       * {
@@ -135,6 +139,45 @@
         color: inherit !important;
       }
 
+      
+      #login_email, #login_pass {
+        position: relative;
+        margin: auto;
+        width: 80%;
+        background-color: inherit;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 2px solid white;
+        text-align: left;
+        background-color: inherit;
+        outline: 0px !important;
+        -webkit-appearance: none !important;
+        box-shadow: none !important;
+      }
+      input[name="Submit"] {
+        color: black;
+        text-decoration: none;
+        padding: 6px 6px;
+        padding-left: 15px;
+        padding-right: 15px;
+        border: 2px solid black;
+      }
+
+      #login_email:active, #login_email:focus {
+        background-color: transparent;
+        border-bottom: 2px solid white;
+      }
+
+      #login_pass:active, #login_pass:focus {
+        background-color: transparent;
+        border-bottom: 2px solid white;
+      }
+
+      .text-responsive {
+        font-size: calc(90% + 0.5vw + 0.5vh);
+      }
+
     </style>
     <title>UCSP | Constrained Chaos</title>
   </head>
@@ -142,7 +185,7 @@
     {% block body %} {% endblock %}
     <!-- {% if current_user.is_authenticated %}
     <div class="text-left">
-    <h5><a style="text-decoration: none; " href = "{{url_for('auth.logout')}}">Logout</a></h5>
+    <p><a style="text-decoration: none; justify-content: left; padding-left: 0%; " href = "{{url_for('auth.logout')}}">[-></a></p>
     <br><br>
     </div>
     {% endif %} -->

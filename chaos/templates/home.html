@@ -9,9 +9,9 @@
 <br><br>
 <!-- <p style="font-family: 'Nova Script', cursive;" class="text-center"><a href = "{{url_for('main.instructions')}}">Proceed to Instructions...</a></p> -->
 {% if current_user.is_authenticated %}
-<div class="text-center"><div class="text-center"><a class="my_btn" href="{{ url_for('main.instructions') }}">Instructions</a></div></div>
+<div class="text-center"><div class="text-center"><a class="my_btn" style="font-size: 1.8rem; font-family: 'Crimson Pro', serif;" href="{{ url_for('main.instructions') }}">Instructions</a></div></div>
 {% else %}
-<div class="text-center"><div class="text-center"><a class="my_btn" href="{{ url_for('auth.login') }}">Login</a></div></div>
+<div class="text-center"><div class="text-center"><a class="my_btn" style="font-size: 1.8rem; font-family: 'Crimson Pro', serif;" href="{{ url_for('auth.login') }}">Login</a></div></div>
 {% endif %}
 </div>
 <br><br>
