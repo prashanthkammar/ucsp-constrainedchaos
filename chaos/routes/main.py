@@ -818,7 +818,7 @@ def pro13():
         return redirect(url_for('auth.login'))
 
     if request.method == 'POST':
-        max_cnt, hints = get_cnt_n_hints_for(14)
+        max_cnt, hints = get_cnt_n_hints_for(13)
         score = int(current_user.score)
         at = str(current_user.attempts)
         if request.form['Answer'].lower().strip()=="42" :
