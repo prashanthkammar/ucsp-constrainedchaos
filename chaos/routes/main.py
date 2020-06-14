@@ -250,6 +250,7 @@ def error2():
 
 
 @main.route('/pro1', methods=['GET','POST'])
+@login_required
 def pro1():
     if current_user.nextq != 1:
         logout_user()
@@ -298,6 +299,7 @@ def pro1():
     return redirect(url_for('main.q1'))
 
 @main.route('/pro2', methods=['GET','POST'])
+@login_required
 def pro2():
     if current_user.nextq != 2:
         logout_user()
@@ -348,6 +350,7 @@ def pro2():
 
 
 @main.route('/pro3', methods=['GET','POST'])
+@login_required
 def pro3():
     if current_user.nextq != 3:
         logout_user()
@@ -396,6 +399,7 @@ def pro3():
     return redirect(url_for('main.q3'))
 
 @main.route('/pro4', methods=['GET','POST'])
+@login_required
 def pro4():
     if current_user.nextq != 4:
         logout_user()
@@ -444,6 +448,7 @@ def pro4():
     return redirect(url_for('main.q4'))
 
 @main.route('/pro5', methods=['GET','POST'])
+@login_required
 def pro5():
     if current_user.nextq != 5:
         logout_user()
@@ -492,6 +497,7 @@ def pro5():
     return redirect(url_for('main.q5'))
 
 @main.route('/pro6', methods=['GET','POST'])
+@login_required
 def pro6():
     if current_user.nextq != 6:
         logout_user()
@@ -540,6 +546,7 @@ def pro6():
     return redirect(url_for('main.q6'))
 
 @main.route('/pro7', methods=['GET','POST'])
+@login_required
 def pro7():
     if current_user.nextq != 7:
         logout_user()
@@ -588,6 +595,7 @@ def pro7():
     return redirect(url_for('main.q7'))
 
 @main.route('/pro8', methods=['GET','POST'])
+@login_required
 def pro8():
     if current_user.nextq != 8:
         logout_user()
@@ -636,6 +644,7 @@ def pro8():
     return redirect(url_for('main.q8'))
 
 @main.route('/pro9', methods=['GET','POST'])
+@login_required
 def pro9():
     if current_user.nextq != 9:
         logout_user()
@@ -685,6 +694,7 @@ def pro9():
 
 
 @main.route('/pro10', methods=['GET','POST'])
+@login_required
 def pro10():
     if current_user.nextq != 10:
         logout_user()
@@ -734,6 +744,7 @@ def pro10():
 
 
 @main.route('/pro11', methods=['GET','POST'])
+@login_required
 def pro11():
     if current_user.nextq != 11:
         logout_user()
@@ -783,6 +794,7 @@ def pro11():
     return redirect(url_for('main.q11'))
 
 @main.route('/pro12', methods=['GET','POST'])
+@login_required
 def pro12():
     if current_user.nextq != 12:
         logout_user()
@@ -832,6 +844,7 @@ def pro12():
 
 
 @main.route('/pro13', methods=['GET','POST'])
+@login_required
 def pro13():
     if current_user.nextq != 13:
         logout_user()
@@ -880,6 +893,7 @@ def pro13():
     return redirect(url_for('main.q13'))
 
 @main.route('/pro14', methods=['GET','POST'])
+@login_required
 def pro14():
     if current_user.nextq != 14:
         logout_user()
@@ -928,6 +942,7 @@ def pro14():
     return redirect(url_for('main.q14'))
 
 @main.route('/pro15', methods=['GET','POST'])
+@login_required
 def pro15():
     if current_user.nextq != 15:
         logout_user()
