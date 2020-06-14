@@ -114,9 +114,6 @@ def disp_question():
         return redirect(url_for('main.finish'))
     for i in range(1, 16):
         if current_user.nextq == i:
-            current_user.present_try = 0
-            current_user.hint = -1
-            db.session.commit()
             return redirect(url_for('main.q' + str(i)))
 
 @main.route('/illuminati')
@@ -281,6 +278,8 @@ def pro1():
             current_user.attempts = at 
             current_user.score = score
             current_user.nextq += int(1)
+            current_user.present_try = 0
+            current_user.hint = -1
             db.session.commit()
             return redirect(url_for('main.disp_question'))
             flash('')
@@ -327,6 +326,8 @@ def pro2():
             current_user.attempts = at
             current_user.score = score
             current_user.nextq += int(1)
+            current_user.present_try = 0
+            current_user.hint = -1
             db.session.commit()
             return redirect(url_for('main.disp_question'))
             flash('')
@@ -375,6 +376,8 @@ def pro3():
             current_user.attempts = at
             current_user.score = score
             current_user.nextq += int(1)
+            current_user.present_try = 0
+            current_user.hint = -1
             db.session.commit()
             return redirect(url_for('main.disp_question'))
             flash('')
@@ -421,6 +424,8 @@ def pro4():
             current_user.attempts = at
             current_user.score = score
             current_user.nextq += int(1)
+            current_user.present_try = 0
+            current_user.hint = -1
             db.session.commit()
             return redirect(url_for('main.disp_question'))
             flash('')
@@ -467,6 +472,8 @@ def pro5():
             current_user.attempts = at
             current_user.score = score
             current_user.nextq += int(1)
+            current_user.present_try = 0
+            current_user.hint = -1
             db.session.commit()
             return redirect(url_for('main.disp_question'))
             flash('')
@@ -513,6 +520,8 @@ def pro6():
             current_user.attempts = at
             current_user.score = score
             current_user.nextq += int(1)
+            current_user.present_try = 0
+            current_user.hint = -1
             db.session.commit()
             return redirect(url_for('main.disp_question'))
             flash('')
@@ -557,9 +566,10 @@ def pro7():
                 at += '7,0| '
 
             current_user.attempts = at
-
             current_user.score = score
             current_user.nextq += int(1)
+            current_user.present_try = 0
+            current_user.hint = -1
             db.session.commit()
             return redirect(url_for('main.disp_question'))
             flash('')
@@ -606,6 +616,8 @@ def pro8():
             current_user.attempts = at
             current_user.score = score
             current_user.nextq += int(1)
+            current_user.present_try = 0
+            current_user.hint = -1
             db.session.commit()
             return redirect(url_for('main.disp_question'))
             flash('')
@@ -652,6 +664,8 @@ def pro9():
             current_user.attempts = at
             current_user.score = score
             current_user.nextq += int(1)
+            current_user.present_try = 0
+            current_user.hint = -1
             db.session.commit()
             return redirect(url_for('main.disp_question'))
             flash('')
@@ -699,6 +713,8 @@ def pro10():
             current_user.attempts = at
             current_user.score = score
             current_user.nextq += int(1)
+            current_user.present_try = 0
+            current_user.hint = -1
             db.session.commit()
             return redirect(url_for('main.disp_question'))
             flash('')
@@ -747,6 +763,8 @@ def pro11():
 
             current_user.score = score
             current_user.nextq += int(1)
+            current_user.present_try = 0
+            current_user.hint = -1
             db.session.commit()
             return redirect(url_for('main.disp_question'))
             flash('')
@@ -793,6 +811,8 @@ def pro12():
             current_user.attempts = at
             current_user.score = score
             current_user.nextq += int(1)
+            current_user.present_try = 0
+            current_user.hint = -1
             db.session.commit()
             return redirect(url_for('main.disp_question'))
             flash('')
@@ -840,6 +860,8 @@ def pro13():
             current_user.attempts = at
             current_user.score = score
             current_user.nextq += int(1)
+            current_user.present_try = 0
+            current_user.hint = -1
             db.session.commit()
             return redirect(url_for('main.disp_question'))
             flash('')
@@ -884,9 +906,10 @@ def pro14():
                 at += '14,0| '
 
             current_user.attempts = at
-
             current_user.score = score
             current_user.nextq += int(1)
+            current_user.present_try = 0
+            current_user.hint = -1
             db.session.commit()
             return redirect(url_for('main.disp_question'))
             flash('')
@@ -932,6 +955,8 @@ def pro15():
             current_user.attempts = at
             current_user.score = score
             current_user.nextq += int(1)
+            current_user.present_try = 0
+            current_user.hint = -1
             db.session.commit()
             if current_user.end_time == None:
                 dt = datetime.now(tz=pytz.UTC)           
