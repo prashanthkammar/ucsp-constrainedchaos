@@ -15,10 +15,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Eater&family=Merienda+One&family=Nova+Script&family=Sofia&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Crimson+Pro:wght@200&family=Inknut+Antiqua:wght@300&family=Kotta+One&family=PT+Serif+Caption&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Bigshot+One&family=Federant&family=Iceland&family=Nova+Oval&family=Nova+Square&family=Quantico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Sriracha&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Tulpen+One&display=swap" rel="stylesheet">    
     <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa&display=swap" rel="stylesheet">
     <style>
+        @import "https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
       * {
         color: grey !important;
       }
@@ -30,7 +32,7 @@
       }
 
       html, body {
-        font-family: 'courier';
+        font-family: 'Amaranth', sans-serif;
         background-color: black;
         color: grey !important;
       }
@@ -123,6 +125,14 @@
         color: black !important;
       }
 
+      i.fa {
+        text-decoration: none !important;
+      }
+
+      i.fa:hover {
+        color: rgb(0, 195, 255) !important;
+      }
+
       .message {
         color: rgb(30, 255, 0) !important;
       }
@@ -182,13 +192,7 @@
     <title>UCSP | Constrained Chaos</title>
   </head>
   <body>
-    {% block body %} {% endblock %}
-    <!-- {% if current_user.is_authenticated %}
-    <div class="text-left">
-    <p><a style="text-decoration: none; justify-content: left; padding-left: 0%; " href = "{{url_for('auth.logout')}}">[-></a></p>
-    <br><br>
-    </div>
-    {% endif %} -->
+    {% block body %} {% endblock %} 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script type="text/javascript"> 
       window.history.forward(); 

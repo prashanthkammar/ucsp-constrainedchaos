@@ -14,5 +14,11 @@
 <div class="text-center"><div class="text-center"><a class="my_btn" style="font-size: 1.8rem; font-family: 'Crimson Pro', serif;" href="{{ url_for('auth.login') }}">Login</a></div></div>
 {% endif %}
 </div>
+<br>
+{% if current_user.is_authenticated %}
+<div class="text-center">
+<a style="text-decoration: none; font-size: 15px;" href = "{{url_for('auth.logout')}}"><i class="fa fa-sign-out fa-2x" aria-hidden="true"></i></a>
+</div>
+{% endif %}
 <br><br>
 {% endblock %}
