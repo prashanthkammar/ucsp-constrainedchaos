@@ -17,7 +17,7 @@
 <br>
 {% if current_user.is_authenticated %}
 <div class="text-center">
-<a style="text-decoration: none; font-size: 15px;" href = "{{url_for('auth.logout')}}"><i class="fa fa-sign-out fa-2x" aria-hidden="true"></i></a>
+<a style="text-decoration: none; font-size: 15px;" href = "{{url_for('auth.logout')}}"><i class="fa fa-sign-out fa-2x" title="Logout" aria-hidden="true"></i></a>
 </div>
 {% endif %}
 <br><br>
