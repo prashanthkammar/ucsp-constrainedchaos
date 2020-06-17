@@ -111,7 +111,7 @@ def instructions():
 @login_required
 def disp_question():
     if current_user.nextq == 16:
-        return redirect(url_for('main.finish'))
+        return redirect(url_for('main.treasure'))
     for i in range(1, 16):
         if current_user.nextq == i:
             return redirect(url_for('main.q' + str(i)))
@@ -120,6 +120,11 @@ def disp_question():
 def illuminati():
     return render_template('illuminati.html')
 
+
+@main.route('/treasure')
+@login_required
+def treasure():
+    return render_template('treasure.html')
 
 @main.route('/finish')
 @login_required

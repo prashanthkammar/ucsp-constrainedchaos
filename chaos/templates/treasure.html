@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<br><br><br>
+<div class="container">
+<p class="text-center text-muted" style="font-family: 'Nova Script', cursive;" >Blimey!! You have reached the end of the rainbow. <br> All this treasure belongs to you now.</p>
+<br>
+<div class="treasure">
+    <div class="text-center"><img style="opacity: 0.5;" width="500px" class="img-fluid" src="{{ url_for('static', filename='images/treasure.jpeg') }}" alt=""></div>
+</div>
+<br><br><br>
+<p class="text-center text-muted" style="font-family: 'Nova Script', cursive;" > Hold on. You hear that sound? What could that be????</p>
+<br>
+<p class="text-center text-muted" style="font-family: 'Nova Script', cursive;" ><a href="{{url_for('main.finish')}}">Go, find out what it is</a></p>
+</div>
+{% endblock %}
