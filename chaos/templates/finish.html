@@ -11,11 +11,12 @@
 </p><br><br>
 <p style="margin: auto; width: 70%; font-family: 'Nova Script', cursive;" class="text-center text-muted lead">You see the time... Oh no! There's just two minutes remaining. You have an online quiz/internals.</p>
 <br><br>
-<p style="font-family: 'Nova Script', cursive;" class="text-center text-muted"><a href="https://ucsp-quiz.herokuapp.com/"> Turn off the alarm and get going</a> </p>
-<br>
 <div class="clock">
-    <div class="text-center"><img style="opacity: 0.5;" width="200px" class="img-fluid" src="{{ url_for('static', filename='images/alarm.jpg') }}" alt=""></div>
+    <div class="text-center"> <a href="https://ucsp-quiz.herokuapp.com/"><img style="opacity: 0.5;" width="200px" class="img-fluid" src="{{ url_for('static', filename='images/alarm.jpg') }}" alt=""></a></div>
 </div>
+<br>
+<p style="font-family: 'Nova Script', cursive;" class="text-center text-muted"><a href="https://ucsp-quiz.herokuapp.com/"> Turn off the alarm and get going</a> </p>
+
 <br><br><br><br><br><br><br><br><br><br>
 <iframe src="{{ url_for('static', filename='music/250-milliseconds-of-silence.mp3') }}" allow="autoplay" id="audio" style="display: none"></iframe>
 <audio src="{{ url_for('static', filename='music/WhatsApp Audio 2020-05-12 at 5.24.56 PM.mpeg') }}" autoplay loop></audio>
