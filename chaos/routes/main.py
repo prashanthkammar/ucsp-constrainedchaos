@@ -48,15 +48,15 @@ def get_cnt_n_hints_for(question_number):
             ("Hint", "I symbolize love"), 
             ("Answer", "heart (Explanation: The above two numbers are the coordinates of the globe. Entering them in google maps will lead you to a 'heart'.)")],
 
-            [("Hint", "I am a Nobel prize winning physicist"), 
-            ("Hint", "My cat is very popular"), 
-            ("Hint", "Search in special temporary alteration of logo on the world's famous search engine"), 
-            ("Answer", "Schrodinger (Explanation: clicking the 'Im feeling lucky' button in google.com leads to doodles. The only doodle that was featured on that day was of Schrödinger's!)")],
+            [("Hint", "Learn from the mistakes!!" ), 
+            ("Hint", "There's a hidden message in the statement."), 
+            ("Hint", "Google the message and find guitar"), 
+            ("Answer", "Smelly Cat (Explanation: After replacing the wrong letters with the correct ones, joining only the correct letters will result in 'Search for Phoebe'. Search in google and click on the guitar. A song sung by Phoebe pops up, which is named as Smelly Cat!)")],
 
-            [("Hint", "Concentrate ?"), 
-            ("Hint","I become curious when I see something blinking on my screen, won't you…??",), 
-            ("Hint", "How much did you earn from '?' "), 
-            ("Answer","200 (Explanation: Google has this Easter egg in the search page of Super Mario Bros. Clicking on the blinking box, you score '200' !!)")],
+            [("Hint", "Blacks and Whites represent the individual bits."), 
+            ("Hint","The binary data needs to be inverted and converted!",), 
+            ("Hint", "Remember, alphabets can also be represented in binary. Proceed from there."), 
+            ("Answer","Stay Safe (Explanation: Using the clue Black is White and White is Black, we realise that we need to invert the bits. Converting it into ASCII results a link. In that link a mobile number is displayed and if you text your name to that number you will get the answer)")],
 
             [("Hint", "Some say everything humans know today can be found in this world"), 
             ("Hint", "Just use the link below; if you have missed it"), 
@@ -95,7 +95,7 @@ def get_cnt_n_hints_for(question_number):
     
     ]
 
-    return (14, hints[question_number - 1])
+    return (9, hints[question_number - 1])
 
 @main.route('/')
 def home():
@@ -561,7 +561,7 @@ def pro7():
         max_cnt, hints = get_cnt_n_hints_for(7)
         score = int(current_user.score)
         at = str(current_user.attempts)
-        if request.form['Answer'].lower().strip()=="erwin schrödinger" or request.form['Answer'].lower().strip()=="schrödinger" or request.form['Answer'].lower().strip()=="erwin schrodinger" or request.form['Answer'].lower().strip()=="schrodinger" :
+        if request.form['Answer'].lower().strip()=="smellycat" or request.form['Answer'].lower().strip()=="smelly cat":
             if current_user.hint == -1:
                 score += 20
                 at += '7,20| '
@@ -610,7 +610,7 @@ def pro8():
         max_cnt, hints = get_cnt_n_hints_for(8)
         score = int(current_user.score)
         at = str(current_user.attempts)
-        if request.form['Answer'].lower().strip() == '200':
+        if request.form['Answer'].lower().strip() == 'stay safe' or request.form['Answer'].lower().strip() == 'staysafe':
             if current_user.hint == -1:
                 score += 20
                 at += '8,20| '

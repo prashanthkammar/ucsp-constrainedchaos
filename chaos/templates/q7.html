@@ -3,20 +3,24 @@
 
 <br>
 <div class="container">
-    <h2 class="display-4 text-center text-secondary">Quest 7&nbsp;<a style="text-decoration: none; font-size: 15px; position: absolute; left: 88%; top: 4rem;" href = "{{url_for('auth.logout')}}"><i class="fa fa-sign-out fa-2x" title="Logout" aria-hidden="true"></i></a></h2>
-    <hr style="height:1px;border-width:0;color:rgb(0, 195, 255);background-color:rgb(0, 195, 255)">
-    <br>
-    <h3><p class="text-responsive text-center text-muted">
-      <i>"I'm feeling lucky on 12th August 2013. Who am I..?"</i>
-    </p></h3><br><br><br><br>
-    <div class="text-center">
-      {% with messages = get_flashed_messages(with_categories=true) %} {% if messages %}
-    {% for category, message in messages %}
-    <p><i class="{{ category}}">{{message}}</i></p>
-    {% endfor %} 
-    {% endif %} {% endwith %}
+  <div class="quest"><h2 class="text-secondary display-4 text-center"><a class="" style="color: grey !important;" href="https://cdn.livekindly.co/wp-content/uploads/2018/06/Phoebe-Friends-Cropped-2.jpg" target="_blank">Quest</a> 7 &nbsp;<a style="text-decoration: none; font-size: 15px; position: absolute; left: 88%; top: 4rem;" href = "{{url_for('auth.logout')}}"><i class="fa fa-sign-out fa-2x" title="Logout" aria-hidden="true"></i></a></h2></div>
+    <hr style="height:1px;border-width:0;color:rgb(0, 195, 255);background-color:rgb(0, 195, 255)"><br>
 
-    <div class="m-auto">
+    <h2><p class="text-center text-muted">
+      "We alwayd belirve thqt you afe a xhallenging, beroic, daredul persin. Yout bower can be determined gere by splving thw velow puzzlr."
+    </p></h2><br><br>
+
+    <h1 class="text-center text-muted" style="font-size: 70px;">&nbsp; &#127928;</h1>
+    <p class="text-center text-muted" style="font-size: small;">click</p>
+        <br><br>
+        <div class="text-center">
+          {% with messages = get_flashed_messages(with_categories=true) %} {% if messages %}
+        {% for category, message in messages %}
+        <p><i class="{{ category}}">{{message}}</i></p>
+        {% endfor %} 
+        {% endif %} {% endwith %}
+        
+       <div class="m-auto">
         <form class="form-group" action="{{ url_for('main.pro7') }}" method="POST" autocomplete="off">
           <span class="text-responsive text-muted">Enter your answer: </span>
           <input
@@ -26,19 +30,22 @@
             type="text"
             required
           /><br />
-          <br />
-          <br>
+          <br /><br>
           <div class="text-responsive">
             <input
-              
               class="btn"
               type="submit"
               name="Submit"
               value="Submit"
             />
           </div>
-    </div>
+        </div>
         </form>
+        <p class="text-right text-muted"><i><a href="https://ae01.alicdn.com/kf/HTB1VvXku7KWBuNjy1zjq6AOypXaf/Canvas-Poster-Silk-Fabric-Hot-New-Custom-Friends-TV-Series-Classical-Home-Decor-Fashion-Mondern-For.jpg" target="_blank">Ahem..!</a></i> </p>
 </div>
 {% endblock %}
+
+
+
+
 
