@@ -512,7 +512,7 @@ def pro6():
         max_cnt, hints = get_cnt_n_hints_for(6)
         score = int(current_user.score)
         at = str(current_user.attempts)
-        if request.form['Answer'].lower().strip()=="heart":
+        if request.form['Answer'].lower().strip()=="heart" or request.form['Answer'].lower().strip()=="fati foufa": 
             if current_user.hint == -1:
                 score += 20
                 at += '6,20| '
