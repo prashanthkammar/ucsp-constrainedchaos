@@ -45,7 +45,7 @@ def admin_login():
 
 
 
-@auth.route('/admin_register', methods = ['GET','POST'])
+@auth.route('/admin_olagebaa', methods = ['GET','POST'])
 def admin_register():
     error = ''
     if request.method == 'POST':
@@ -68,7 +68,7 @@ def admin_register():
     return render_template('admin_register.html',error=error)
 
 
-@auth.route('/register', methods=['GET','POST'])
+@auth.route('/olagebaa', methods=['GET','POST'])
 def register():
     error = ''
     if request.method=='POST':
