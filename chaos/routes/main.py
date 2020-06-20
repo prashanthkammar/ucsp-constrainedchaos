@@ -265,7 +265,7 @@ def pro1():
         max_cnt, hints = get_cnt_n_hints_for(1)
         at = str(current_user.attempts)
         score = int(current_user.score)
-        if request.form['Answer'].lower().strip() == "welcome":
+        if request.form['Answer'].lower().strip() == "welcome" or request.form['Answer'].lower().strip()=="warmly welcome":
             if current_user.hint == -1:
                 score += 20
                 at += '1,20| '
