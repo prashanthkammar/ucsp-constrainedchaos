@@ -49,7 +49,7 @@ def get_cnt_n_hints_for(question_number):
             ("Answer", "heart (Explanation: The above two numbers are the coordinates of the globe. Entering them in google maps will lead you to a 'heart'.)")],
 
             [("Hint", "Learn from the mistakes!!" ), 
-            ("Hint", "There's a hidden message in the statement."), 
+            ("Hint", "There's a hidden message in the statement. Only one letter is wrong in each word."), 
             ("Hint", "Google the message and find guitar"), 
             ("Answer", "Smelly Cat (Explanation: After replacing the wrong letters with the correct ones, joining only the correct letters will result in 'Search for Phoebe'. Search in google and click on the guitar. A song sung by Phoebe pops up, which is named as Smelly Cat!)")],
 
