@@ -369,7 +369,7 @@ def pro3():
         max_cnt, hints = get_cnt_n_hints_for(3)
         score = int(current_user.score)
         at = str(current_user.attempts)
-        if request.form['Answer'].lower().strip()=="coronavirus":
+        if request.form['Answer'].lower().strip()=="coronavirus" or request.form['Answer'].lower().strip()=="corona virus":
             if current_user.hint == -1:
                 score += 20
                 at += '3,20| '
