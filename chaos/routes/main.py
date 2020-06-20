@@ -95,7 +95,7 @@ def get_cnt_n_hints_for(question_number):
     
     ]
 
-    return (2, hints[question_number - 1])
+    return (9, hints[question_number - 1])
 
 @main.route('/')
 def home():
@@ -298,7 +298,9 @@ def pro1():
                 current_user.hint += 1
                 db.session.commit()
                 flash(f"{hints[current_user.hint][0]} : {hints[current_user.hint][1]}", "message")
-
+            elif current_user.hint >= 3:
+                flash(f"{hints[3][0]} : {hints[3][1]}", "message")
+              
         return redirect(url_for('main.q1'))
 
     return redirect(url_for('main.q1'))
@@ -347,6 +349,8 @@ def pro2():
                 current_user.hint += 1
                 db.session.commit()
                 flash(f"{hints[current_user.hint][0]} : {hints[current_user.hint][1]}", "message")
+            elif current_user.hint >= 3:
+                flash(f"{hints[3][0]} : {hints[3][1]}", "message")
 
         return redirect(url_for('main.q2'))
 
@@ -398,6 +402,8 @@ def pro3():
                 current_user.hint += 1
                 db.session.commit()
                 flash(f"{hints[current_user.hint][0]} : {hints[current_user.hint][1]}", "message")
+            elif current_user.hint >= 3:
+                flash(f"{hints[3][0]} : {hints[3][1]}", "message")
 
         return redirect(url_for('main.q3'))
 
@@ -447,6 +453,8 @@ def pro4():
                 current_user.hint += 1
                 db.session.commit()
                 flash(f"{hints[current_user.hint][0]} : {hints[current_user.hint][1]}", "message")
+            elif current_user.hint >= 3:
+                flash(f"{hints[3][0]} : {hints[3][1]}", "message")
 
         return redirect(url_for('main.q4'))
 
@@ -496,6 +504,8 @@ def pro5():
                 current_user.hint += 1
                 db.session.commit()
                 flash(f"{hints[current_user.hint][0]} : {hints[current_user.hint][1]}", "message")
+            elif current_user.hint >= 3:
+                flash(f"{hints[3][0]} : {hints[3][1]}", "message")
 
         return redirect(url_for('main.q5'))
 
@@ -545,6 +555,8 @@ def pro6():
                 current_user.hint += 1
                 db.session.commit()
                 flash(f"{hints[current_user.hint][0]} : {hints[current_user.hint][1]}", "message")
+            elif current_user.hint >= 3:
+                flash(f"{hints[3][0]} : {hints[3][1]}", "message")
 
         return redirect(url_for('main.q6'))
 
@@ -594,6 +606,8 @@ def pro7():
                 current_user.hint += 1
                 db.session.commit()
                 flash(f"{hints[current_user.hint][0]} : {hints[current_user.hint][1]}", "message")
+            elif current_user.hint >= 3:
+                flash(f"{hints[3][0]} : {hints[3][1]}", "message")
 
         return redirect(url_for('main.q7'))
 
@@ -643,6 +657,8 @@ def pro8():
                 current_user.hint += 1
                 db.session.commit()
                 flash(f"{hints[current_user.hint][0]} : {hints[current_user.hint][1]}", "message")
+            elif current_user.hint >= 3:
+                flash(f"{hints[3][0]} : {hints[3][1]}", "message")
 
         return redirect(url_for('main.q8'))
 
@@ -692,6 +708,8 @@ def pro9():
                 current_user.hint += 1
                 db.session.commit()
                 flash(f"{hints[current_user.hint][0]} : {hints[current_user.hint][1]}", "message")
+            elif current_user.hint >= 3:
+                flash(f"{hints[3][0]} : {hints[3][1]}", "message")
 
         return redirect(url_for('main.q9'))
 
@@ -742,6 +760,8 @@ def pro10():
                 current_user.hint += 1
                 db.session.commit()
                 flash(f"{hints[current_user.hint][0]} : {hints[current_user.hint][1]}", "message")
+            elif current_user.hint >= 3:
+                flash(f"{hints[3][0]} : {hints[3][1]}", "message")
 
         return redirect(url_for('main.q10'))
 
@@ -793,6 +813,8 @@ def pro11():
                 current_user.hint += 1
                 db.session.commit()
                 flash(f"{hints[current_user.hint][0]} : {hints[current_user.hint][1]}", "message")
+            elif current_user.hint >= 3:
+                flash(f"{hints[3][0]} : {hints[3][1]}", "message")
 
         return redirect(url_for('main.q11'))
 
@@ -842,6 +864,8 @@ def pro12():
                 current_user.hint += 1
                 db.session.commit()
                 flash(f"{hints[current_user.hint][0]} : {hints[current_user.hint][1]}", "message")
+            elif current_user.hint >= 3:
+                flash(f"{hints[3][0]} : {hints[3][1]}", "message")
 
         return redirect(url_for('main.q12'))
 
@@ -892,6 +916,8 @@ def pro13():
                 current_user.hint += 1
                 db.session.commit()
                 flash(f"{hints[current_user.hint][0]} : {hints[current_user.hint][1]}", "message")
+            elif current_user.hint >= 3:
+                flash(f"{hints[3][0]} : {hints[3][1]}", "message")
 
         return redirect(url_for('main.q13'))
 
@@ -941,6 +967,8 @@ def pro14():
                 current_user.hint += 1
                 db.session.commit()
                 flash(f"{hints[current_user.hint][0]} : {hints[current_user.hint][1]}", "message")
+            elif current_user.hint >= 3:
+                flash(f"{hints[3][0]} : {hints[3][1]}", "message")
 
         return redirect(url_for('main.q14'))
 
@@ -993,6 +1021,8 @@ def pro15():
                 current_user.hint += 1
                 db.session.commit()
                 flash(f"{hints[current_user.hint][0]} : {hints[current_user.hint][1]}", "message")
+            elif current_user.hint >= 3:
+                flash(f"{hints[3][0]} : {hints[3][1]}", "message")
 
         return redirect(url_for('main.q15'))
 
