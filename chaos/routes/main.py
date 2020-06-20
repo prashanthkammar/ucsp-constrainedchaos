@@ -95,7 +95,7 @@ def get_cnt_n_hints_for(question_number):
     
     ]
 
-    return (9, hints[question_number - 1])
+    return (2, hints[question_number - 1])
 
 @main.route('/')
 def home():
